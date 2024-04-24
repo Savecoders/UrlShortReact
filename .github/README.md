@@ -6,6 +6,16 @@
 
 This is a project that contains both the frontend for our application. The frontend is built using ReactJS and the backend is built using NestJS.
 
+# Client
+
+| Stack Client           | Content          |
+| ---------------------- | ---------------- |
+| Framework or libraries | Reactjs TS       |
+| Css Framework          | TailwindCss      |
+| Router                 | React-Router-Dom |
+| Build                  | Vite             |
+| UI                     | shadcn           |
+
 ## Repository Structure
 
 The repository is organized as follows:
@@ -15,7 +25,7 @@ The repository is organized as follows:
 
 ## Getting Started
 
-To get started with development, you'll need to clone the repository and install the dependencies in both the frontenddirectories.
+To get started with development, you'll need to clone the repository and install the dependencies in both the frontend directories.
 
 ## Client
 

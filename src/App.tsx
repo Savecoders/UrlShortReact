@@ -3,6 +3,7 @@ import { ModeToggle } from './components/ModeToggle';
 import { Routes, Route } from 'react-router-dom';
 import { SignUp } from './pages/SignUp';
 import { Login } from './pages/Login';
+import NotFount from './pages/NotFount';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={<ModeToggle />} />
         <Route path='/signUp' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
+        <Route path='*' element={<NotFount />} />
       </Routes>
     </ThemeProvider>
   );

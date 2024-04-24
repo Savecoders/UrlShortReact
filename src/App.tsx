@@ -9,8 +9,8 @@ function App() {
     <ThemeProvider defaultTheme='dark' storageKey='dark'>
       <Routes>
         <Route path='/' element={<ModeToggle />} />
-        <Route path='/SignUp' element={<SignUp />} />
-        <Route path='/Login' element={<Login />} />
+        <Route path='/signUp' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </ThemeProvider>
   );

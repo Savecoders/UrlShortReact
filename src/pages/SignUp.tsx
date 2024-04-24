@@ -32,8 +32,8 @@ export function SignUp() {
           </section>
           <div className='mt-4 text-center text-sm'>
             Already have an Account?{' '}
-            <Link to='#' className='underline'>
-              Sign in
+            <Link to='/login' className='underline'>
+              Login
             </Link>
           </div>
         </CardContent>

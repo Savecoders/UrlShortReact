@@ -2,55 +2,20 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Label } from '@/components/ui/Label';
+
 export function Login() {
   return (
-    <div className='w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]'>
-      <div className='flex items-center justify-center py-12'>
-        <div className='mx-auto grid w-[350px] gap-6'>
-          <div className='grid gap-2 text-center'>
-            <h1 className='text-3xl font-bold'>Login</h1>
-            <p className='text-balance text-muted-foreground'>
-              Enter your email below to login to your account
-            </p>
-          </div>
-          <div className='grid gap-4'>
-            <div className='grid gap-2'>
-              <Label htmlFor='email'>Email</Label>
-              <Input id='email' type='email' placeholder='m@example.com' required />
-            </div>
-            <div className='grid gap-2'>
-              <div className='flex items-center'>
-                <Label htmlFor='password'>Password</Label>
-                <Link to='/forgot-password' className='ml-auto inline-block text-sm underline'>
-                  Forgot your password?
-                </Link>
-              </div>
-              <Input id='password' type='password' required />
-            </div>
-            <Button type='submit' className='w-full'>
-              Login
-            </Button>
-            <Button variant='outline' className='w-full'>
-              Login with Google
-            </Button>
-          </div>
-          <div className='mt-4 text-center text-sm'>
-            Don&apos;t have an account?{' '}
-            <Link to='/signUp' className='underline'>
-              Sign up
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className='hidden bg-muted lg:block'>
-        <img
-          src='/placeholder.svg'
-          alt='Image'
-          width='1920'
-          height='1080'
-          className='h-full w-full object-cover dark:brightness-[0.2] dark:grayscale'
-        />
-      </div>
-    </div>
+    <main className='w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px] bg-slate-500'>
+      <section className='flex flex-col justify-center p-10 space-y-10 bg-black'>
+        <h1 className='text-primary text-4xl text-center'>Login</h1>
+        <form className='flex flex-col space-y-5 w-full rounded-sm border border-zinc-500 p-10'>
+          <Label htmlFor='email'>Email</Label>
+          <Input type='email' id='email' />
+          <Label htmlFor='password'>Password</Label>
+          <Input type='password' id='password' />
+          <Button type='submit'>Login</Button>
+        </form>
+      </section>
+    </main>
   );
 }

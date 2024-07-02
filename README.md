@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="https://github.com/Savecoders" target="blank"><img src="./.github/assets/screen.png" alt="Screen" /></a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# UrlShort
 
-Currently, two official plugins are available:
+This is a project that contains both the frontend for our application. The frontend is built using ReactJS and the backend is built using NestJS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Client
 
-## Expanding the ESLint configuration
+| Stack Client           | Content          |
+| ---------------------- | ---------------- |
+| Framework or libraries | Reactjs TS       |
+| Css Framework          | TailwindCss      |
+| Router                 | React-Router-Dom |
+| Build                  | Vite             |
+| UI                     | shadcn           |
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Repository Structure
 
-- Configure the top-level `parserOptions` property like this:
+The repository is organized as follows:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- `/client/src`: This directory contains the ReactJS frontend application.
+- `/docs`: This directory contains all the project documentation, including requirements, data flow diagrams, state diagrams, and BPMN2 diagrams.
+
+## Getting Started
+
+To get started with development, you'll need to clone the repository and install the dependencies in both the frontend directories.
+
+## Client
+
+```bash
+git clone <repository-url>
+cd client
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Api
+
+The api repository: [UrlShortNest](https://github.com/Savecoders/UrlShortNest)

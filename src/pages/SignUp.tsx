@@ -9,8 +9,7 @@ export function SignUp() {
         <img
           src='https://images.unsplash.com/photo-1494633114655-819eb91fde40?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           alt='login'
-          className='object-cover w-full h-full hidden md:block
-        '
+          className='object-cover w-full h-full hidden md:block '
         />
       </div>
       <section className='flex flex-col w-full max-w-[560px] justify-center p-10 space-y-10 bg-black'>
@@ -29,12 +28,12 @@ export function SignUp() {
 
           <div className='flex justify-center text-center'>
             Already have an account? &nbsp;
-            <a href='/signUp' className='text-blue-600 font-semibold'>
+            <a href='/login' className='text-blue-600 font-semibold'>
               login here!
             </a>
           </div>
 
-          <Button type='submit'>Login</Button>
+          <Button type='submit'>Register</Button>
         </form>
       </section>
     </main>

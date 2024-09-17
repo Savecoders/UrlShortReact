@@ -6,7 +6,7 @@ export function Login() {
   return (
     <main className='w-full h-screen md:flex md:min-h-[600px]'>
       <section className='flex flex-col w-full max-w-[560px] justify-center p-10 space-y-10 bg-black'>
-        <h1 className='text-primary text-4xl text-center'>Login UrlShort</h1>
+        <h1 className='text-primary text-4xl text-center'>Login UrlTiny</h1>
         <form className='flex flex-col space-y-6 w-full p-10'>
           <Label htmlFor='email'>Email</Label>
           <Input type='email' id='email' />

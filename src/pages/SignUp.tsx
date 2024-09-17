@@ -13,7 +13,7 @@ export function SignUp() {
         />
       </div>
       <section className='flex flex-col w-full max-w-[560px] justify-center p-10 space-y-10 bg-black'>
-        <h1 className='text-primary text-4xl text-center'>Register UrlShort</h1>
+        <h1 className='text-primary text-4xl text-center'>Register UrlTiny</h1>
         <p className='px-10 py-0 text-center'>
           Create an account to start shortening your links. It's free and only
         </p>

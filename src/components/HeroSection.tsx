@@ -5,7 +5,7 @@ export default function HeroSectionCentredWithImage() {
     <>
       <main className='relative overflow-hidden py-24 lg:py-32'>
         <section className='container'>
-          <div className='max-w-2xl text-center mx-auto'>
+          <div className='max-w-2xl text-center mx-auto pb-6'>
             <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
               UrlTiny
             </h1>
@@ -17,7 +17,7 @@ export default function HeroSectionCentredWithImage() {
             </p> */}
             <Announcement />
           </div>
-          <div className='mt-10 relative max-w-5xl mx-auto'>
+          <div className='mt-10 relative max-w-4xl mx-auto'>
             <img
               src='https://media.istockphoto.com/id/1707071510/es/foto/optimizaci%C3%B3n-de-motores-de-b%C3%BAsqueda-o-seo-manos-de-hombre-usando-computadora-port%C3%A1til-para.jpg?s=612x612&w=0&k=20&c=sX9CY_WdR-JCVnoFzBiCUa0G5dilzl7EcN5iY9BCfks='
               className='rounded-xl w-[1024px] brightness-50 '

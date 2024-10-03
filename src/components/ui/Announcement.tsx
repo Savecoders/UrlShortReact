@@ -6,9 +6,9 @@ export default function Announcement() {
         href='#'
       >
         Más corto, más fácil Prueba!!
-        <span className='py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-muted-foreground/15 font-semibold text-sm'>
+        <span className='py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-muted-foreground/15 font-semibold text-sm animate-pulse'>
           <svg
-            className='flex-shrink-0 w-4 h-4'
+            className='flex-shrink-0 w-4 h-4 animate-accordion-right'
             xmlns='http://www.w3.org/2000/svg'
             width={24}
             height={24}

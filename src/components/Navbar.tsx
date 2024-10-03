@@ -13,28 +13,29 @@ import {
 import { Button } from '@/components/ui/Button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/Avatar';
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/Sheet';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <header className='fixed top-0 z-50 w-full bg-background shadow-sm'>
       <div className='container flex h-16 items-center justify-between px-4 md:px-6'>
-        <a href='#' className='flex items-center gap-2'>
+        <Link to='#' className='flex items-center gap-2'>
           <MountainIcon className='h-6 w-6' />
           <span className='text-lg font-semibold'>UrlTiny</span>
-        </a>
+        </Link>
         <nav className='hidden items-center gap-6 text-sm font-medium md:flex'>
-          <a href='#' className='text-muted-foreground hover:text-foreground'>
+          <Link to='#' className='text-muted-foreground hover:text-foreground'>
             Home
-          </a>
-          <a href='#' className='text-muted-foreground hover:text-foreground'>
+          </Link>
+          <Link to='#' className='text-muted-foreground hover:text-foreground'>
             About
-          </a>
-          <a href='#' className='text-muted-foreground hover:text-foreground'>
+          </Link>
+          <Link to='#' className='text-muted-foreground hover:text-foreground'>
             Services
-          </a>
-          <a href='#' className='text-muted-foreground hover:text-foreground'>
+          </Link>
+          <Link to='#' className='text-muted-foreground hover:text-foreground'>
             Contact
-          </a>
+          </Link>
         </nav>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -46,12 +47,12 @@ export default function Navbar() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align='end'>
-            {/* Href */}
+            {/* to */}
             <DropdownMenuItem>
               <MountainIcon className='h-6 w-6' />
-              <a href='/login' className='ml-2 flex justify-around'>
+              <Link to='/login' className='ml-2 flex justify-around'>
                 Profile
-              </a>
+              </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>
             <DropdownMenuSeparator />
@@ -69,18 +70,18 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side='left' className='md:hidden'>
             <div className='grid gap-4 p-4'>
-              <a href='#' className='text-lg font-medium'>
+              <Link to='#' className='text-lg font-medium'>
                 Home
-              </a>
-              <a href='#' className='text-lg font-medium'>
+              </Link>
+              <Link to='#' className='text-lg font-medium'>
                 About
-              </a>
-              <a href='#' className='text-lg font-medium'>
+              </Link>
+              <Link to='#' className='text-lg font-medium'>
                 Services
-              </a>
-              <a href='#' className='text-lg font-medium'>
+              </Link>
+              <Link to='#' className='text-lg font-medium'>
                 Contact
-              </a>
+              </Link>
             </div>
           </SheetContent>
         </Sheet>

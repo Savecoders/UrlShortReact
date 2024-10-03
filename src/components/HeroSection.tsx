@@ -20,7 +20,7 @@ export default function HeroSectionCentredWithImage() {
           <div className='mt-10 relative max-w-4xl mx-auto'>
             <img
               src='https://media.istockphoto.com/id/1707071510/es/foto/optimizaci%C3%B3n-de-motores-de-b%C3%BAsqueda-o-seo-manos-de-hombre-usando-computadora-port%C3%A1til-para.jpg?s=612x612&w=0&k=20&c=sX9CY_WdR-JCVnoFzBiCUa0G5dilzl7EcN5iY9BCfks='
-              className='rounded-xl w-[1024px] brightness-50 '
+              className='rounded-xl w-[1024px] brightness-75 contrast-125 grayscale-0 shadow-2xl shadow-teal-300/10'
               alt='Image Description'
             />
             <figure className='absolute bottom-12 -start-20 -z-[1] w-48 h-48 bg-gradient-to-bl  from-teal-400 via-teal-600 to-teal-900 p-px rounded-lg'>

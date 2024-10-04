@@ -24,16 +24,13 @@ export default function Navbar() {
           <span className='text-lg font-semibold'>UrlTiny</span>
         </Link>
         <nav className='hidden items-center gap-6 text-sm font-medium md:flex'>
-          <Link to='#' className='text-muted-foreground hover:text-foreground'>
-            Home
-          </Link>
-          <Link to='#' className='text-muted-foreground hover:text-foreground'>
+          <Link to='/about' className='text-muted-foreground hover:text-foreground'>
             About
           </Link>
-          <Link to='#' className='text-muted-foreground hover:text-foreground'>
+          <Link to='/services' className='text-muted-foreground hover:text-foreground'>
             Services
           </Link>
-          <Link to='#' className='text-muted-foreground hover:text-foreground'>
+          <Link to='/contact' className='text-muted-foreground hover:text-foreground'>
             Contact
           </Link>
         </nav>

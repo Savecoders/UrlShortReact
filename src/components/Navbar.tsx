@@ -14,8 +14,11 @@ import { Button } from '@/components/ui/Button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/Avatar';
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/Sheet';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [isLogin, setIsLogin] = useState(false);
+
   return (
     <header className='fixed top-0 z-50 w-full bg-background shadow-sm'>
       <div className='container flex h-16 items-center justify-between px-4 md:px-6'>
@@ -34,30 +37,46 @@ export default function Navbar() {
             Contact
           </Link>
         </nav>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant='ghost' size='icon' className='rounded-full'>
-              <Avatar className='h-8 w-8'>
-                <AvatarImage src='/placeholder-user.jpg' alt='@shadcn' />
-                <AvatarFallback>JP</AvatarFallback>
-              </Avatar>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align='end'>
-            {/* to */}
-            <DropdownMenuItem>
-              <MountainIcon className='h-6 w-6' />
-              <Link to='/login' className='ml-2 flex justify-around'>
-                Profile
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>Settings</DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>Create new UrlShort</DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>Logout</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        {isLogin ? (
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant='ghost' size='icon' className='rounded-full'>
+                <Avatar className='h-8 w-8'>
+                  <AvatarImage src='/placeholder-user.jpg' alt='@shadcn' />
+                  <AvatarFallback>JP</AvatarFallback>
+                </Avatar>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align='end'>
+              <DropdownMenuItem>
+                <MountainIcon className='h-6 w-6' />
+                <Link to='/login' className='ml-2 flex justify-around'>
+                  Profile
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>Settings</DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Create new UrlShort</DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Logout</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : (
+          <nav className='hidden items-center gap-6 text-sm font-medium md:flex'>
+            <Link
+              to='/register'
+              className='text-slate-900 hover:text-slate-950  bg-zinc-50 hover:bg-zinc-200 px-2 py-1 rounded-md text-sm font-medium'
+            >
+              Register
+            </Link>
+            <Link
+              to='/login'
+              className='text-slate-900 hover:text-slate-950  bg-zinc-50 hover:bg-zinc-200 px-2 py-1 rounded-md text-sm font-medium'
+            >
+              Login
+            </Link>
+          </nav>
+        )}
         <Sheet>
           <SheetTrigger asChild>
             <Button variant='ghost' size='icon' className='md:hidden'>
@@ -67,9 +86,6 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side='left' className='md:hidden'>
             <div className='grid gap-4 p-4'>
-              <Link to='#' className='text-lg font-medium'>
-                Home
-              </Link>
               <Link to='#' className='text-lg font-medium'>
                 About
               </Link>

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import About from './pages/About';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/services' element={<Services />} />
         <Route path='/about' element={<About />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='*' element={<NotFount />} />
       </Routes>
     </ThemeProvider>
